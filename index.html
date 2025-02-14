@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <main>
+        <section class="sign-up-form-wrap">
+
+            <div class="left-sidebar">
+
+                <div class="logo-wrap">
+                    <img id="logo-image" src="./assets/images/odin-lined.png" alt="">
+                    <p class="logo-text">ODIN</p>
+                    
+                </div>
+                <p class="image-credit">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+                
+            </div>
+
+            <div class="content">
+
+                <p class="opening">This is not a real online service! You know you need something 
+                    like this in your life to help you realise your deepest dreams. 
+                    <br>Sign up <em>now</em> to get started.</p>
+                <p class="opening">You <em>know</em> you want to.</p>
+                
+                <form action="/form-submission" method="post">
+                    <div class="form">
+                        <p class="form-header">Let's do this!</p>
+                        
+                        <p class="field-wrap">
+                            <div class="inner-field-wrap">
+                                <label for="first_name">First Name:
+                                    <input id="first_name" name="first_name" type="text">
+                                </label>
+
+                                <label for="last_name">Last Name:
+                                    <input id="last_name" name="last_name" type="text">
+                                </label>
+                            </div>
+                        </p>
+                        
+                        <p class="field-wrap">
+                            <div class="inner-field-wrap">
+                                <label for="email">Email:
+                                    <input id="email" name="email" type="email">
+                                </label>
+
+                                <label for="tel">Phone Number:
+                                    <input id="tel" name="tel" type="tel">
+                                </label>
+                            </div>
+                        </p>
+                        
+                        <p class="field-wrap">
+                            <div class="inner-field-wrap">
+                                <label for="password">Password
+                                    <input id="password" name="password" type="password" required>
+                                </label>
+
+                                <label for="confirm_password">Confirm Password
+                                    <input id="confirm_password" name="confirm_password" type="password" required>
+                                </label>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <p class="button-wrap">
+                        <button type="submit">Create Account</button>
+                    </p>
+
+                    <p class="login-link">Already have an account? <a href="">Log in</a></p>
+
+                </form>
+            
+            </div>
+        
+        </section>
+    
+    </main>
+    <script src="./scripts.js"></script>
 </body>
 </html></html>
